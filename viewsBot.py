@@ -105,7 +105,9 @@ def extract_token(html_doc):
         return message_element['data-view']
     else:
         return None
-
+@app.route('/check', methods=['GET'])
+def check():
+    return jsonify({'status': 'ok'}), 200
 @app.route('/start', methods=['POST'])
 def start():
     global session
