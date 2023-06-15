@@ -4,8 +4,9 @@ VERIFY_SSL = False
 
 def add_view_to_post(post_url):
     # Define the url where the flask app is running
-    url = 'http://localhost:5001/start'
-
+    # url = 'http://localhost:5001/start'
+    url = "https://ec2-35-170-69-10.compute-1.amazonaws.com/start"
+    url = "https://35.170.69.10/start"
     # Define the payload to be sent to the server
     payload = {
         'url': post_url
